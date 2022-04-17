@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Little Lord Fontleroy NF';
+    src: url('./resources/LittleLordFontleroyNF.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Fontleroy Brown NF';
+    src: url('./resources/FontleroyBrownNF.otf') format('otf');
+}
+
+/* _INIT_ */
+html {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+}
+
+body,
+#content {
+    height: 100%;
+}
+
+/* NAV */
+nav {
+    background-color: #EFEAEA;
+    padding: 32px 0 16px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-item {
+    font-family: "Little Lord Fontleroy NF";
+    font-size: 28px;
+    margin: 0 10%;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-color: #B8B6B6;
+}
+
+.current {
+    text-decoration-color: #070707;
+}
