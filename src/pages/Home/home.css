@@ -51,6 +51,19 @@
     background-color: #e8dfdf9a;
 }
 
+.restaurant-name::after {
+    display: block;
+    position: absolute;
+    
+    content: "Le dîner d'Hugo";
+
+    font-family: "Scriptina";
+    font-size: larger;
+
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
 .menu-btn {
     cursor: pointer;
 
