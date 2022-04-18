@@ -1,3 +1,4 @@
+import { appendChildren } from "./helpers/helpers";
 import { Controller } from "./controller/controller";
 import { loadHomepage } from "./init";
 
@@ -8,11 +9,11 @@ const nav = document.createElement("nav");
 const content = document.getElementById("content");
 
 // CREATE NAV ITEMS
-const homeNavItem = Controller.createNavItem("Home", "home");
+const homeNavItem = Controller.createNavItem("Home");
 homeNavItem.classList.add("current");
 
-const menuNavItem = Controller.createNavItem("Menu", "menu");
-const contactNavItem = Controller.createNavItem("Contact", "contact");
+const menuNavItem = Controller.createNavItem("Menu");
+const contactNavItem = Controller.createNavItem("Contact");
 
 const navItems = [homeNavItem,menuNavItem,contactNavItem];
 
@@ -33,7 +34,7 @@ content.appendChild(nav);
 addEventListenerToNavItems(navItems);
 
 // ADD NAV ITEMS TO NAV ELEMENT
-Controller.appendChildren(nav,navItems);
+appendChildren(nav,navItems);
 
 
 loadHomepage();
