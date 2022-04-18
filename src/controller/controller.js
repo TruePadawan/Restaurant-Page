@@ -1,5 +1,8 @@
+import { Homepage } from "../pages/Home/home";
+import { Menupage } from "../pages/Menu/menu";
+
 export const Controller = (() => {
-    const main =  document.querySelector("main");
+    const content = document.getElementById('content');
 
     function createNavItem(title, link)
     {
@@ -20,10 +23,36 @@ export const Controller = (() => {
         }
     }
 
-    function switchTab(tabData)
+    function deleteCurrentPage()
     {
-        console.log('switching tab');
-        appendChildren(main)
+        let currentPage = content.lastChild; // CURRENT PAGE WILL ALWAYS BE THE LAST CHILD
+        content.removeChild(currentPage);
+    }
+
+    function indicateActivePage(pageTitle) {
+      let navItems = document.querySelectorAll(".nav-item");
+
+      for (let index = 0; index < 3; index++) {
+        let navItem = navItems[index];
+
+        if (navItem.text !== pageTitle) {
+          navItem.className = "nav-item";
+        } else {
+          navItem.className = "nav-item current";
+        }
+      }
+    }
+
+    function switchTab(page)
+    {
+        const pageData = {
+            Home: Homepage.data,
+            Menu: Menupage.data
+        };
+        deleteCurrentPage();
+        content.appendChild(pageData[page]);
+
+        indicateActivePage(page)
     }
 
     return {
