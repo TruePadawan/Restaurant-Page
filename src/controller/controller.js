@@ -1,5 +1,6 @@
 import { Homepage } from "../pages/Home/home";
 import { Menupage } from "../pages/Menu/menu";
+import { Contactpage } from "../pages/Contact/contact";
 
 export const Controller = (() => {
     const content = document.getElementById('content');
@@ -47,8 +48,10 @@ export const Controller = (() => {
     {
         const pageData = {
             Home: Homepage.data,
-            Menu: Menupage.data
+            Menu: Menupage.data,
+            Contact: Contactpage.data
         };
+        
         deleteCurrentPage();
         content.appendChild(pageData[page]);
 
