@@ -17,28 +17,13 @@ const contactNavItem = Controller.createNavItem("Contact", "contact");
 const navItems = [homeNavItem,menuNavItem,contactNavItem];
 
 // FUNCTIONS
-function indicateActivePage(title)
-{
-    for (let index = 0; index < 3; index++)
-    {
-        let navItem = navItems[index];
-
-        if (navItem.text !== title)
-        {
-            navItem.className = "nav-item";
-        }
-        else
-        {
-            navItem.className = "nav-item current";
-        }
-    }
-}
-
 function addEventListenerToNavItems(navItems)
 {
     for (let index = 0; index < navItems.length; index++) {
+        let navItemText = navItems[index].text;
+
         navItems[index].addEventListener('click', () => {
-            indicateActivePage(navItems[index].text)
+            Controller.switchTab(navItemText);
         });
     }
 }
