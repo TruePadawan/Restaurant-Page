@@ -5,7 +5,7 @@ import { Contactpage } from "../pages/Contact/contact";
 export const Controller = (() => {
     const content = document.getElementById('content');
 
-    function createNavItem(title, link)
+    function createNavItem(title)
     {
         let anchor = document.createElement('a');
         anchor.href = "#";
@@ -13,15 +13,6 @@ export const Controller = (() => {
         anchor.text = title;
 
         return anchor;
-    }
-
-    // UTILITY FUNCTION FOR APPENDING ONE OR MORE NODES TO A PARENT
-    function appendChildren(parent, children)
-    {
-        for (let index = 0; index < children.length; index++)
-        {
-            parent.appendChild(children[index]);
-        }
     }
 
     function deleteCurrentPage()
@@ -51,16 +42,12 @@ export const Controller = (() => {
             Menu: Menupage.data,
             Contact: Contactpage.data
         };
-        
+
         deleteCurrentPage();
         content.appendChild(pageData[page]);
 
         indicateActivePage(page)
     }
 
-    return {
-        createNavItem,
-        appendChildren,
-        switchTab
-    }
+    return { createNavItem, switchTab }
 })();
