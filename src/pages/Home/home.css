@@ -82,7 +82,7 @@
 }
 
 .homepage-image {
-    background-image: url("../../resources/mainImg.jpg");
+    background-image: url("../../resources/images/mainImg.jpg");
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
