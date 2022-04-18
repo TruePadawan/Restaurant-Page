@@ -1,35 +1,42 @@
+import { Controller } from "../../controller/controller";
+
 import "./home.css";
 
 export const Homepage = (() => {
-    const root = document.createElement('div');
-    root.classList.add("home");
-    
-    const mainContentDiv = document.createElement('div');
-    mainContentDiv.classList.add("main-content");
+  const root = document.createElement("div");
+  root.classList.add("home");
 
-    const restaurantNameDiv = document.createElement('div');
-    restaurantNameDiv.classList.add("restaurant-name");
+  const mainContentDiv = document.createElement("div");
+  mainContentDiv.classList.add("main-content");
 
-    const courtesy = document.createElement('p');
-    courtesy.classList.add("courtesy");
-    courtesy.textContent = "Dîner Délicieusement";
+  const restaurantNameDiv = document.createElement("div");
+  restaurantNameDiv.classList.add("restaurant-name");
 
-    const menuBtn = document.createElement('button');
-    menuBtn.classList.add("menu-btn");
-    menuBtn.textContent = "Menu";
+  const courtesy = document.createElement("p");
+  courtesy.classList.add("courtesy");
+  courtesy.textContent = "Dîner Délicieusement";
 
-    const homepageBGImgDiv = document.createElement('div');
-    homepageBGImgDiv.classList.add("homepage-image");
+  const menuBtn = document.createElement("button");
+  menuBtn.classList.add("menu-btn");
+  menuBtn.textContent = "Menu";
 
-    // APPEND ELEMENTS
-    root.appendChild(mainContentDiv);
-    root.appendChild(homepageBGImgDiv);
-    mainContentDiv.appendChild(restaurantNameDiv);
-    mainContentDiv.append(menuBtn);
-    restaurantNameDiv.appendChild(courtesy);
+  const homepageBGImgDiv = document.createElement("div");
+  homepageBGImgDiv.classList.add("homepage-image");
 
-    return {
-        data: [root] 
-    }
+  // APPEND ELEMENTS
+  root.appendChild(mainContentDiv);
+  root.appendChild(homepageBGImgDiv);
+  mainContentDiv.appendChild(restaurantNameDiv);
+  mainContentDiv.append(menuBtn);
+  restaurantNameDiv.appendChild(courtesy);
 
+  // EVENT HANDLERS
+  menuBtn.addEventListener('click', () => {
+    Controller.switchTab("Menu");
+  });
+
+  return {
+    data: root,
+  };
+  
 })();
