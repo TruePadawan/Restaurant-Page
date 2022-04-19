@@ -1,3 +1,28 @@
 .menu {
-    color: brown;
+    padding-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+h1 {
+    margin: 0 auto;
+    font-family: "Croissant One", cursive;
+    font-size: 2rem;
+}
+
+.menuBoard {
+    width: min(100%,1363px);
+    margin: 0 auto;
+    padding: 30px;
+
+    background-color: #EDEDED;
+    border-top-left-radius: 8px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, min(100%, 500px));
+    grid-auto-rows: 346px;
+    gap: 14px 163px;
+    justify-content: center;
 }

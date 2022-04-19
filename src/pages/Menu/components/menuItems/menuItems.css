@@ -1,0 +1,6 @@
+.menuItems {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+}
