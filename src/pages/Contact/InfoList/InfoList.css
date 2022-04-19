@@ -1,0 +1,21 @@
+.infolist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+}
+
+.infoListItem {
+    display: flex;
+    gap: 10px;
+}
+
+.infoListItem > img {
+    width: 20px;
+    height: 20px;
+}

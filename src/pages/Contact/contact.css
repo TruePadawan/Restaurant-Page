@@ -1,3 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+
 .contact {
-    color: green;
+    font-family: "Sanchez", serif;
+    height: 100%;
+    
+    padding: 34px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 82px;
+
+    background-color: #F9F3F3;
+}
+
+.contact > div {
+    width: min(100%, 780px);
+    background-color: #F3E8E8;
+    border-top-left-radius: 8px;
+
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 4rem;
+    justify-content: center;
 }

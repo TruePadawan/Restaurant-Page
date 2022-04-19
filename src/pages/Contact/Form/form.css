@@ -1,0 +1,51 @@
+.contactForm {
+    width: min(100%,400px);
+    height: 400px;
+    padding: 30px;
+    background-color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.contactForm > input {
+    border: none;
+    border-bottom: 2px solid #BDB2B2;
+}
+
+.contactForm > textarea {
+    padding: 5px;
+    position: relative;
+    border: none;
+    height: 150px;
+    background-color: rgba(189, 178, 178, 0.35);
+}
+
+.contactForm > input::placeholder, .contactForm > textarea::placeholder {
+    color: rgba(122, 115, 115, 0.51);
+}
+
+.contactForm > textarea::placeholder {
+    position: absolute;
+    bottom: 0;
+}
+
+.contactForm > input:focus, .contactForm > textarea:focus {
+    outline: none;
+}
+
+.contactForm > button {
+    cursor: pointer;
+
+    width: 100px;
+    height: 30px;
+
+    border: none;
+
+    background-color: #C4C4C4;
+    color: white;
+
+    box-shadow: 0 4px 8px rgba(163, 150, 150, 0.25);
+}
