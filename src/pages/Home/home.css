@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'Fontleroy Brown NF';
-    src: url('./resources/font/FontleroyBrownNF.otf') format('opentype');
+    src: url('../../resources/font/FontleroyBrownNF.otf') format('opentype');
 }
 
 .home {
