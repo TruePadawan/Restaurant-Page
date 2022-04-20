@@ -1,23 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
-
 @font-face {
     font-family: 'Little Lord Fontleroy NF';
-    src: url('./resources/font/LittleLordFontleroyNF.otf') format('otf');
-}
-
-@font-face {
-    font-family: 'Fontleroy Brown NF';
-    src: url('./resources/font/FontleroyBrownNF.otf') format('otf');
-}
-
-@font-face {
-    font-family: 'Scriptina';
-    src: url('./resources/font/SCRIPTIN.ttf') format('ttf');
+    src: url('./resources/font/LittleLordFontleroyNF.otf') format('opentype');
 }
 
 @font-face {
     font-family: 'Calamity Jane NF';
-    src: url('./resources/font/CalamityJaneNF.otf');
+    src: url('./resources/font/CalamityJaneNF.otf') format('opentype');
 }
 
 /* _INIT_ */

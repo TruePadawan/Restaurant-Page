@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Scriptina';
+    src: url('../../resources/font/SCRIPTIN.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Fontleroy Brown NF';
+    src: url('./resources/font/FontleroyBrownNF.otf') format('opentype');
+}
+
 .home {
     height: 100%;
     display: grid;
