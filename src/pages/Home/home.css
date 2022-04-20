@@ -28,18 +28,17 @@
 .restaurant-name {
     position: relative;
 
-    width: max-content;
     background-color: #EFE9E9;
     color: #6D6340;
-
-    font-family: "Little Lord Fontleroy NF";
-    font-size: 40px;
 
     padding: 33px 82px 55px 51px;
     z-index: 1;
 }
 
 .courtesy {
+    font-family: "Little Lord Fontleroy NF";
+    font-size: 40px;
+
     position: relative;
     z-index: 1;
 }
@@ -68,7 +67,7 @@
     content: "Le dîner d'Hugo";
 
     font-family: "Scriptina";
-    font-size: larger;
+    font-size: 48px;
 
     margin-top: -10px;
     margin-left: -10px;
@@ -114,5 +113,15 @@
 
     .homepage-image {
         display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .courtesy {
+        font-size: 35px;
+    }
+
+    .restaurant-name::after {
+        font-size: 40px;
     }
 }
