@@ -9,7 +9,7 @@
 }
 
 .home {
-    height: 100%;
+    height: calc(100% - 79px);
     display: grid;
     grid-template-columns: minmax(425px, 1.3fr) 1fr;
 }
@@ -26,7 +26,7 @@
 }
 
 .restaurant-name {
-    width: min(370px,100%);
+    width: min(370px, 100%);
     height: 135px;
 
     position: relative;
@@ -51,7 +51,7 @@
 
 .restaurant-name::before {
     border-radius: 50%;
-    
+
     position: absolute;
     top: -55px;
     left: -60px;
@@ -59,17 +59,17 @@
     display: block;
 
     content: "";
-    
+
     width: 150px;
     height: 150px;
-    
+
     background-color: #e8dfdf9a;
 }
 
 .restaurant-name::after {
     display: block;
     position: absolute;
-    
+
     content: "Le dîner d'Hugo";
 
     font-family: "Scriptina";

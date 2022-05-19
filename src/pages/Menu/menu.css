@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
 
 .menu {
-    padding-top: 30px;
-
+    height: calc(100% - 79px);
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 30px;
 }
 
 h1 {
     margin: 0 auto;
+    margin-top: 10px;
     font-family: "Croissant One", cursive;
     font-size: 2rem;
 }
 
 .menuBoard {
-    width: min(100%,1363px);
+    width: min(100%, 1363px);
     margin: 0 auto;
     padding: 30px;
 
